@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta tags for character set, viewport, and title -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+
+    <!-- External stylesheets and scripts (Bootstrap and Font Awesome) -->
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d368ad9ef6.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Main section with a card for the stopwatch -->
+    <section id="section1">
+        <div class="main">
+            <div class="card text-center">
+                <div class="card-header">
+                    <!-- Container for stopwatch/timer buttons -->
+                    <div class="stopwatchandtimerbtns">
+                        <div class="stopwatch">STOPWATCH</div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <!-- Container for stopwatch digits and separators -->
+                    <div class="bothmachineheight">
+                        <div id="stopwatchdiv">
+                            <span id="hr" class="act-tim-digit" hidden>0</span>
+                            <span id="hrspan" class="act-tim-sep" hidden>h</span>
+                            <span id="min" class="act-tim-digit" hidden>0</span>
+                            <span id="mspan" class="act-tim-sep" hidden>m</span>
+                            <span id="sec" class="act-tim-digit">0</span>
+                            <span id="s-span" class="act-tim-sep">s</span>
+                            <span id="count" class="act-tim-digit-last">00</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer text-body-secondary">
+                    <!-- Container for buttons (Start, Reset) -->
+                    <div class="btns" id="stopsssss">
+                        <button class="btnss" id="startStop" onclick="startstop()">Start</button>
+                        <button class="btnss bt" id="reset" onclick="reset()">Reset</button>
+                    </div>
+                    <!-- Container for fullscreen button -->
+                    <div id="stopssssss">
+                        <button onclick="openFullscreen();" class="l-btn"><i class="fa-solid fa-expand"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- External JavaScript file -->
+    <script src="app.js"></script>
+</body>
+
+</html>

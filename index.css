@@ -1,0 +1,338 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#section1{
+    background-color: rgb(237, 234, 234);
+}
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.main{
+    width: 50%;
+    border: 1px solid rgb(91, 91, 91);
+
+}
+.main2{
+    width: 50%;
+    border: 5px solid rgb(91, 91, 91);
+}
+.card{
+   
+    border-radius: none !important ;
+}
+
+.card ul {
+    display: flex;
+    list-style: none;
+    
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    font-size: 20px;
+}
+ul {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    width: 100%;
+    text-decoration: none !important;
+}
+.link-style {
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+    color: #1a0dab;
+}
+  
+  
+  .link-style:hover {
+    color: purple; /* Change text color on hover for visual feedback */
+  }
+  
+  
+  
+  
+  
+  
+  
+ul a{
+    text-decoration: none;
+    color: #1a0dab;}
+
+.card-header{
+    background-color: white !important;
+    
+    }
+
+    .stopwatchandtimerbtns{
+        
+        width: 100% !important;
+        height: 100% !important;
+        display: flex;
+        justify-content: space-around;
+    }
+    .topbtn{
+        background-color:white ;
+      border: none;
+        font-size:23px;
+color: blue;
+
+    }
+    .stopwatch{
+        font-size: 40px;
+        font-weight: bold;
+        color:white ;
+
+    }
+    .stopwatch:hover{
+        font-size: 40px;
+        font-weight: bold;
+        color:black ;
+
+
+    }
+.card-body{
+    display: flex;
+
+    justify-content: flex-start !important;
+    /* padding: 120px 0 !important; */
+    padding-left: 20px!important;
+    padding-block: 70px  !important;
+}
+.bothmachineheight{
+    min-height: 100px !important;
+}
+
+.text-body-secondary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    /* border: 1px solid red !important; */
+}
+.btns{
+    display: flex;
+    gap: 20px !important;
+}
+
+.btnss{
+    padding: 5px 24px !important;
+    color: #fff !important;
+    background-color: #0e5ec8 !important;
+    /* border: 1px solid #1a73e8 !important; */
+    border-radius : none !important;    
+    border-radius: none;
+    border: 1px solid #dadce0 !important;
+    font-weight: 500;
+}
+.btnss:hover{
+background-color: #2e89ff  !important;
+
+}
+.bt{
+    color: #1a73e8 !important;
+    background-color: #fff !important;
+    border: 1px solid #dadce0 !important;
+    font-weight: 500;
+ 
+}
+/* timer */
+
+.bt:hover{
+    background-color: #1a73e8 !important;
+    color: white !important;
+}
+.l-btn {
+    background: none !important;
+    border: none !important;
+    color: inherit !important;
+    box-shadow: none !important;
+    cursor: pointer;
+    padding: 0;
+  }
+
+/* timer */
+.btt{
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+.card-body{
+
+}
+.card-body h1{
+    /* display: flex !important; */
+    /* font-weight: ; */
+}
+.card-body p{
+
+padding-top:5px  !important;
+padding-left: 5px;
+padding-right: 5px;
+font-size: 30px   !important;
+font-weight: 600;
+
+}
+.p{
+    margin-left: 10px !important; ;
+}
+
+
+.act-tim-sep {
+    display: inline-block;
+    font-size: 28px;
+    outline: none;
+    padding-right: 18px;
+}
+.act-tim-digit {
+    border: none;
+    border-right: 1px solid transparent;
+    font-size: 62px;
+    outline: none;
+    font-variant-numeric: tabular-nums;
+}
+.act-tim-digit-last{
+    border: none;
+    border-right: 1px solid transparent;
+    font-size: 38px;
+    outline: none;
+    font-variant-numeric: tabular-nums;
+}
+
+  .stopwatchandtimerbtns{
+background-color: black;
+
+  }
+  .stopwatchandtimerbtns :hover{
+    background-color: white;
+    
+      }
+
+
+
+  @media screen and (max-width: 1024px) {
+    .main{
+        width: 60%;
+        border: 1px solid rgb(91, 91, 91);
+    
+    }
+  }
+  @media screen and (max-width: 768px) {
+
+    .main{
+        width: 100% !important;
+        border: 1px solid rgb(91, 91, 91);
+        /* height: 100vh !important; */
+    
+    }
+    .card-body{
+        display: flex;
+    
+        justify-content: center !important;
+  
+
+    }
+    .stopwatch{
+        font-size: 25px;
+        font-weight: bold;
+        color:white ;
+
+    }
+    .act-tim-sep {
+        display: inline-block;
+        font-size: 15px;
+        outline: none;
+        padding-right: 15px;
+    }
+    .act-tim-digit-last{
+        border: none;
+        border-right: 1px solid transparent;
+        font-size: 25px;
+        outline: none;
+        font-variant-numeric: tabular-nums;
+    }
+    .act-tim-digit {
+        border: none;
+        border-right: 1px solid transparent;
+        font-size: 42px;
+        outline: none;
+        font-variant-numeric: tabular-nums;
+    }
+
+  }
+  @media screen and (max-width: 425px) {
+    .act-tim-sep {
+        display: inline-block;
+        font-size: 12px;
+        outline: none;
+        padding-right: 15px;
+    }
+    .act-tim-digit-last{
+        border: none;
+        border-right: 1px solid transparent;
+        font-size: 25px;
+        outline: none;
+        font-variant-numeric: tabular-nums;
+    }
+    .act-tim-digit {
+        border: none;
+        border-right: 1px solid transparent;
+        font-size: 38px;
+        outline: none;
+        font-variant-numeric: tabular-nums;
+    }
+    .btns{
+        display: flex;
+        gap: 20px !important;
+    }
+    
+    .btnss{
+        padding: 3px 18px !important;
+        color: #fff !important;
+        background-color: #0e5ec8 !important;
+        /* border: 1px solid #1a73e8 !important; */
+        border-radius : none !important;    
+        border-radius: none;
+        border: 1px solid #dadce0 !important;
+        font-weight: 500;
+    }
+    .bt{
+        color: #1a73e8 !important;
+        background-color: #fff !important;
+        border: 1px solid #dadce0 !important;
+        font-weight: 500;
+     
+    }
+    /* timer */
+    
+    .bt:hover{
+        background-color: #1a73e8 !important;
+        color: white !important;
+    }
+    .l-btn {
+        background: none !important;
+        border: none !important;
+        color: inherit !important;
+        box-shadow: none !important;
+        cursor: pointer;
+        padding: 0;
+      }
+    
+    /* timer */
+    .btt{
+        margin-left: 15px;
+    }
+    
+  }
