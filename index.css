@@ -156,7 +156,9 @@ background-color: #2e89ff  !important;
     cursor: pointer;
     padding: 0;
   }
-
+  .l-btn :active{
+    background-color: greenyellow;
+  }
 /* timer */
 .btt{
     margin-left: 15px;
